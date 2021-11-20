@@ -1,5 +1,10 @@
 # Minimalistic Micro Services Example NodeJS
 
+Pre-Requisites
+
+- Docker
+- Minikube
+
 Characteristics
 
 - Each microservice has its own data store (In this example we are not using database for simplicity.)
@@ -43,3 +48,21 @@ Each yaml file defines a deployment and a ClusterIP service
 Only posts api is externally exposed and hence posts-svc.yaml represents the NodePort service for posts api
 
 Ingress-nginx controller is used to handle routes
+
+in the ingress-svc.yaml each route is routed to a specific backend service
+
+Cloning & Building
+
+- Clone this repository
+- Build the docker images in respective folders
+- Push docker images to docker hub
+- Apply the yaml configurations by navigating to infra\k8s folder and issuing the command `kubectl apply -f .`
+
+The react app has some problem that prevents it from worrking. Use postman instead.
+
+Modify your hosts file (`/etc/hosts`) and route the traffic to posts.com to the `minikube ip`
+
+```
+<your minikube ip> posts.com
+
+```
