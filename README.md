@@ -41,3 +41,5 @@ The infr/k8s folder contains kubernetes configuration yaml files.
 Each yaml file defines a deployment and a ClusterIP service
 
 Only posts api is externally exposed and hence posts-svc.yaml represents the NodePort service for posts api
+
+Ingress-nginx controller is used to handle routes
