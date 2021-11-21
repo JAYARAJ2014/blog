@@ -66,3 +66,9 @@ Modify your hosts file (`/etc/hosts`) and route the traffic to posts.com to the 
 <your minikube ip> posts.com
 
 ```
+
+Using Skaffold (Only applicable at Dev phase)
+
+It is a headache to develop if we have to build each and every image, push it to the registry and apply deploymnet. Skaffold automates and simplifies this process for development.
+
+For information: Navigate to https://skaffold.dev/
