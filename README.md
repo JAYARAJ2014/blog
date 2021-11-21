@@ -1,5 +1,7 @@
 # Minimalistic Micro Services Example NodeJS
 
+This example is only for very basic conceptual understandign without any sophistication and complexities.
+
 Pre-Requisites
 
 - Docker
@@ -18,6 +20,12 @@ Characteristics
 - All the events are stored in an event data store so that query service can catch up if it goes down and comes back again.
 
 ![](images/services.png)
+
+A note about event data store:
+
+- Any event received by event-bus will be stored in an event data store. (Extremely large data store)
+- query service will query event store
+- when query service starts up , it catches up all events occured up to that time.This way if service goes down it can syncup events that occured when it was down.
 
 apis
 
