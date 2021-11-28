@@ -17,8 +17,8 @@ spec:
         image: jayarajdocker/event-bus
         resources:
           limits:
-            memory: "128Mi"
-            cpu: "500m"
+            memory: "512Mi"
+            cpu: "1000m"
         ports:
         - containerPort: 4005
 ---
