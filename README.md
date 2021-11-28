@@ -80,3 +80,5 @@ Using Skaffold (Only applicable at Dev phase)
 It is a headache to develop if we have to build each and every image, push it to the registry and apply deploymnet. Skaffold automates and simplifies this process for development.
 
 For information: Navigate to https://skaffold.dev/
+
+### Added new relic APM support

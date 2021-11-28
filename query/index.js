@@ -37,7 +37,9 @@ const handleEvent = (type, data) => {
 };
 
 app.get('/posts', (req, res) => {
-  res.send(posts);
+  // throw new Error('What the hell!');
+  //res.send(posts);
+  res.status(400).send('There was a terrible problem here');
 });
 
 app.post('/events', (req, res) => {
